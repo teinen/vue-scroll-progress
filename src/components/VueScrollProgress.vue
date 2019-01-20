@@ -1,5 +1,5 @@
 <template>
-  <div id="seekbar" v-bind:style="seekBarStyle"></div>
+  <div id="progress-bar" :style="progressBarStyle"></div>
 </template>
 
 <script>
@@ -11,9 +11,9 @@ export default {
       default: "#42b983"
     },
     opacity: {
-      type: Number,
+      type: String,
       required: false,
-      default: 1.0
+      default: "1.0"
     },
     height: {
       type: String,
@@ -23,8 +23,11 @@ export default {
   },
   data() {
     return {
-      seekBarStyle: {
-        width: "1%"
+      progressBarStyle: {
+        width: "1%",
+        "background-color": this.color,
+        opacity: this.opacity,
+        height: this.height
       }
     };
   },
@@ -34,9 +37,9 @@ export default {
       const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100;
 
       if (scrolledPer <= 1) {
-        this.seekBarStyle.width = "1%";
+        this.progressBarStyle.width = "1%";
       } else {
-        this.seekBarStyle.width = scrolledPer.toString() + "%";
+        this.progressBarStyle.width = scrolledPer.toString() + "%";
       }
     },
     calcScreenMaxHeight() {
@@ -56,14 +59,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#seekbar {
+#progress-bar {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #42b983;
-  height: 8px;
-  opacity: 0.7;
 }
 </style>
