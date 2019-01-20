@@ -4,6 +4,25 @@
 
 <script>
 export default {
+  props: {
+    // seekbar color
+    color: {
+      type: String,
+      required: false,
+      default: "#42b983"
+    },
+    // seekbar opacity
+    opacity: {
+      type: Number,
+      required: false,
+      default: 1.0
+    },
+    height: {
+      type: String,
+      required: false,
+      default: "5px"
+    }
+  },
   data() {
     return {
       seekBarStyle: {
