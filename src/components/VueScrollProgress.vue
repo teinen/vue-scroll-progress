@@ -7,18 +7,15 @@ export default {
   props: {
     color: {
       type: String,
-      required: false,
-      default: "#42b983"
+      required: true
     },
     opacity: {
       type: String,
-      required: false,
-      default: "1.0"
+      required: true
     },
     height: {
       type: String,
-      required: false,
-      default: "5px"
+      required: true
     }
   },
   data() {
@@ -27,7 +24,7 @@ export default {
         width: "1%",
         "background-color": this.color,
         opacity: this.opacity,
-        height: this.height
+        height: `${this.height}px`
       }
     };
   },

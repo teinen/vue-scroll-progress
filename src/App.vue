@@ -1,9 +1,9 @@
 <template>
   <div id="main">
     <vue-scroll-progress
-      color="#8181F7"
+      color="#42b983"
       opacity="0.9"
-      height="3px"
+      height="3"
     ></vue-scroll-progress>
     Scroll Progress bar using Vue.js
   </div>
