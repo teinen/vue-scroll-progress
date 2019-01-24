@@ -1,20 +1,16 @@
 <template>
   <div id="main">
-    <vue-scroll-progress
-      color="#42b983"
-      opacity="0.9"
-      height="3"
-    ></vue-scroll-progress>
+    <vue-seek-bar color="#42b983" opacity="0.9" height="3"></vue-seek-bar>
     Scroll Progress bar using Vue.js
   </div>
 </template>
 
 <script>
-import VueScrollProgress from "./components/VueScrollProgress";
+import VueSeekBar from "./components/VueSeekBar";
 
 export default {
   components: {
-    "vue-scroll-progress": VueScrollProgress
+    "vue-seek-bar": VueSeekBar
   }
 };
 </script>

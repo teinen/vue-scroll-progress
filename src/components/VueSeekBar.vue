@@ -1,5 +1,5 @@
 <template>
-  <div id="progress-bar" :style="progressBarStyle"></div>
+  <div id="seek-bar" :style="seekbarStyle"></div>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      progressBarStyle: {
+      seekbarStyle: {
         width: "1%",
         "background-color": this.color,
         opacity: this.opacity,
@@ -34,9 +34,9 @@ export default {
       const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100;
 
       if (scrolledPer <= 1) {
-        this.progressBarStyle.width = "1%";
+        this.seekbarStyle.width = "1%";
       } else {
-        this.progressBarStyle.width = scrolledPer.toString() + "%";
+        this.seekbarStyle.width = scrolledPer.toString() + "%";
       }
     },
     calcScreenMaxHeight() {
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#progress-bar {
+#seek-bar {
   display: block;
   position: fixed;
   top: 0;
