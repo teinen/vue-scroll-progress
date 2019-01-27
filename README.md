@@ -1,34 +1,46 @@
-# vue-scroll-progress
+# vue-seek-bar
 
-## Project setup
-```
-yarn install
-```
+Simple seek bar on screen top with Vue.js.
 
-### Compiles and hot-reloads for development
+## Install
 ```
-yarn run serve
+yarn add vue-seek-bar
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
+## Usage
+
+```vue
+<template>
+  <vue-seek-bar
+    color="#42b983"
+    opacity="0.9"
+    height="3"
+  ></vue-seek-bar>
+</template>
+
+<script>
+import VueSeekBar from "vue-seek-bar";
+
+export default {
+  components: { VueSeekBar }
+};
+</script>
 ```
 
-### Run your tests
-```
-yarn run test
-```
+## Props
 
-### Lints and fixes files
-```
-yarn run lint
-```
+### `color`
 
-### Run your unit tests
-```
-yarn run test:unit
-```
+You can use your favorite color.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### `opacity`
+
+You can decide opacity of seek bar.
+
+### `height`
+
+You can use any height.
+
+## License
+
+MIT
