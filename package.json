@@ -1,11 +1,30 @@
 {
   "name": "vue-seek-bar",
   "version": "0.1.0",
+  "keywords": [
+    "vue",
+    "vue-plugin",
+    "scrollbar",
+    "library"
+  ],
   "private": false,
+  "license": "MIT",
+  "main": "vue-seek-bar.js",
+  "repository": {
+    "url": "teinen/vue-seek-bar",
+    "type": "git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "teinen",
+    "email": "teinen.github@gmail.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --target lib --name vue-seek-bar ./src/main.js",
+    "lint": "vue-cli-service lint --fix",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
