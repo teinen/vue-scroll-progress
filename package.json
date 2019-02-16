@@ -9,7 +9,7 @@
   ],
   "private": false,
   "license": "MIT",
-  "main": "vue-seek-bar.js",
+  "main": "./dist/vue-seek-bar.umd.min.js",
   "repository": {
     "url": "teinen/vue-seek-bar",
     "type": "git"
@@ -22,13 +22,14 @@
     "email": "teinen.github@gmail.com"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open ./example/index.js",
     "build": "vue-cli-service build --target lib --name vue-seek-bar ./src/main.js",
     "lint": "vue-cli-service lint --fix",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "vue": "^2.5.21"
+    "vue": "^2.5.21",
+    "vue-seek-bar": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.0",
