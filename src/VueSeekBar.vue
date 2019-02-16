@@ -18,7 +18,7 @@ const props = {
   }
 };
 
-const data = () => {
+const data = function() {
   return {
     seekbarStyle: {
       width: "1%",
