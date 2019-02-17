@@ -63,7 +63,7 @@ const component = {
 export default component;
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #vue-seek-bar {
   display: block;
   position: fixed;

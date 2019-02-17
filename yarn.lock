@@ -9812,6 +9812,38 @@ vue-seek-bar@^0.1.2:
     vue "^2.5.21"
     vue-seek-bar "^0.1.0"
 
+vue-seek-bar@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vue-seek-bar/-/vue-seek-bar-0.1.3.tgz#b8142baac086a06315d2b1078e34dd614507de3e"
+  integrity sha512-e9V5cWtBjJ2w0e2qIkbLHOLKvpThuViaShdd4a2aNJDS2Bcuj6//Ujqg7t+Fbypxrwbriu15kya/I2wPCa3EBg==
+  dependencies:
+    vue "^2.5.21"
+    vue-seek-bar "^0.1.2"
+
+vue-seek-bar@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue-seek-bar/-/vue-seek-bar-0.1.4.tgz#4e4c0885050f8e51fee99a3dad6c3d0c6dcf58b4"
+  integrity sha512-4K9uujEKZna/VIe76ladRJz+2n6resNM/aqBA6bLZVhvjrwge/5bVNLKn+iNoux9EO+a2mfohlRNlYvMbhz5SA==
+  dependencies:
+    vue "^2.5.21"
+    vue-seek-bar "^0.1.3"
+
+vue-seek-bar@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/vue-seek-bar/-/vue-seek-bar-0.1.6.tgz#e7cfe90b36ecc7059fc87593d2d3ea3dd1311c04"
+  integrity sha512-j4QAFRFSJhShtDd70RWJPhpVCHSHAInECuey2xnPqkIMQuyoiVsXUKedmDxH0bRK+4bsZcnzwNNac61yIBXi4A==
+  dependencies:
+    vue "^2.5.21"
+    vue-seek-bar "^0.1.4"
+
+vue-seek-bar@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/vue-seek-bar/-/vue-seek-bar-0.1.7.tgz#052122819a37a17a57551daace4019a322e7a5ff"
+  integrity sha512-Gvx9SyGs2f2sM57Z35zzdZlzHdRkiVtrTIOGNMoV4WmzQOuO7yYzlfFv0xkGV0MXAspIIFjLM8loMWJE2iM8Tw==
+  dependencies:
+    vue "^2.5.21"
+    vue-seek-bar "^0.1.6"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"

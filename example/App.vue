@@ -1,6 +1,6 @@
 <template>
   <div id="main">
-    <VueSeekBar color="#42b983" opacity="0.9" height="3"></VueSeekBar>
+    <VueSeekBar color="#42b983" opacity="0.9" height="5"></VueSeekBar>
     Scroll Progress bar using Vue.js
   </div>
 </template>
