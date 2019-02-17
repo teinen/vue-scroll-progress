@@ -1,5 +1,5 @@
 <template>
-  <div id="seek-bar" :style="seekbarStyle"></div>
+  <div id="vue-seek-bar" :style="vueSeekBarStyle"></div>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ const props = {
 
 const data = function() {
   return {
-    seekbarStyle: {
+    vueSeekBarStyle: {
       width: "1%",
       "background-color": this.color,
       opacity: this.opacity,
@@ -35,9 +35,9 @@ const methods = {
     const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100;
 
     if (scrolledPer <= 1) {
-      this.seekbarStyle.width = "1%";
+      this.vueSeekBarStyle.width = "1%";
     } else {
-      this.seekbarStyle.width = scrolledPer.toString() + "%";
+      this.vueSeekBarStyle.width = scrolledPer.toString() + "%";
     }
   },
   calcScreenMaxHeight() {
@@ -63,8 +63,8 @@ const component = {
 export default component;
 </script>
 
-<style lang="scss" scoped>
-#seek-bar {
+<style lang="scss">
+#vue-seek-bar {
   display: block;
   position: fixed;
   top: 0;

@@ -9804,6 +9804,14 @@ vue-seek-bar@^0.1.0:
   dependencies:
     vue "^2.5.21"
 
+vue-seek-bar@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vue-seek-bar/-/vue-seek-bar-0.1.2.tgz#7c6a361acde4adbc14ce6577c5ff6cebf9caa13d"
+  integrity sha512-AIGOvDQTQHgMIeTCD+/8kUlTDpF3U90dV6LRsqknjFNDHZVOiV0Uez8LrEhCi0WNL8keZZVjozwlOidbYvgBAA==
+  dependencies:
+    vue "^2.5.21"
+    vue-seek-bar "^0.1.0"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"

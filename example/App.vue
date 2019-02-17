@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import VueSeekBar from "../src/VueSeekBar";
+import VueSeekBar from "vue-seek-bar";
 
 export default {
   components: { VueSeekBar }
