@@ -1,21 +1,27 @@
 # vue-seek-bar
 
-Simple seek bar on screen top with Vue.js.
+Very simple page top scroll seek bar with Vue.js.
 
 ## Install
-```
+
+```bash
+# npm
+npm install vue-seek-bar
+
+# yarn
 yarn add vue-seek-bar
 ```
 
 ## Usage
 
-```vue
+```js
 <template>
-  <vue-seek-bar
-    color="#42b983"
-    opacity="0.9"
-    height="3"
-  ></vue-seek-bar>
+  <div id="main">
+    <VueSeekBar color="#42b983" opacity="0.9" height="3" />
+    <div>
+      Your page contents here!!!
+    </div>
+  </div>
 </template>
 
 <script>
@@ -31,16 +37,22 @@ export default {
 
 ### `color`
 
-You can use your favorite color.
+Specify seek bar color.  
+You can use both color code(`#000000`), and `rgb()`.
 
 ### `opacity`
 
-You can decide opacity of seek bar.
+Specify seek bar opacity.  
+Input `0.1` to `1.0`.
 
 ### `height`
 
-You can use any height.
+Specify seek bar height.
 
 ## License
 
 MIT
+
+## Author
+
+teinen
