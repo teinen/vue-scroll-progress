@@ -8,7 +8,7 @@
 
     <div class="content" v-for="i in 40" :key="i">Please scroll page !!!</div>
 
-    <footer><p>Copyright 2019 Akira Kanno</p></footer>
+    <footer><p>Footer contents</p></footer>
   </div>
 </template>
 
