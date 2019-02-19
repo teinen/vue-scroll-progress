@@ -1,6 +1,6 @@
 {
   "name": "vue-seek-bar",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Very simple page top scroll seek bar with Vue.js.",
   "keywords": [
     "vue",
