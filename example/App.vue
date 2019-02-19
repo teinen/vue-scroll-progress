@@ -3,7 +3,8 @@
     <!-- vue seek bar -->
     <VueSeekBar color="#42b983" opacity="0.9" height="5"></VueSeekBar>
 
-    <h1>Scroll Progress bar using Vue.js</h1>
+    <h1>vue-seek-bar</h1>
+    <h2>Very simple scroll progress bar with Vue.js</h2>
 
     <div class="content" v-for="i in 40" :key="i">Please scroll page !!!</div>
 
@@ -25,7 +26,8 @@ export default {
   width: 100vw;
   padding: 10px 0 0 0;
 
-  h1 {
+  h1,
+  h2 {
     text-align: center;
   }
 
