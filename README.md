@@ -2,7 +2,7 @@
 
 Very simple page top scroll seek bar with Vue.js.
 
-![demo image](https://user-images.githubusercontent.com/25704785/52997517-1c703380-3464-11e9-8618-9bad891936f6.gif)
+![demo image](https://user-images.githubusercontent.com/25704785/52998027-8b9a5780-3465-11e9-98d7-12595bc8f8cb.gif)
 
 ## Install
 
