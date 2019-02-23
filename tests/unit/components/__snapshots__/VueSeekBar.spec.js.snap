@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VueSeekBar.vue renders correctly 1`] = `<div id="vue-seek-bar" style="width: 1%;"></div>`;

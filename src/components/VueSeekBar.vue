@@ -6,26 +6,26 @@
 const props = {
   color: {
     type: String,
-    required: true
+    required: true,
   },
   opacity: {
     type: String,
-    required: true
+    required: true,
   },
   height: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 };
 
 const data = function() {
   return {
     vueSeekBarStyle: {
-      width: "1%",
-      "background-color": this.color,
+      width: '1%',
+      'background-color': this.color,
       opacity: this.opacity,
-      height: `${this.height}px`
-    }
+      height: `${this.height}px`,
+    },
   };
 };
 
@@ -35,15 +35,15 @@ const methods = {
     const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100;
 
     if (scrolledPer <= 1) {
-      this.vueSeekBarStyle.width = "1%";
+      this.vueSeekBarStyle.width = '1%';
     } else {
-      this.vueSeekBarStyle.width = scrolledPer.toString() + "%";
+      this.vueSeekBarStyle.width = scrolledPer.toString() + '%';
     }
   },
   calcScreenMaxHeight() {
     const docEl = document.documentElement;
     return docEl.scrollHeight - docEl.clientHeight;
-  }
+  },
 };
 
 const component = {
@@ -52,12 +52,12 @@ const component = {
   methods,
   mounted() {
     // add event listner
-    window.addEventListener("scroll", this.scrollHandler);
+    window.addEventListener('scroll', this.scrollHandler);
   },
   destroyed() {
     // remove event listner
-    window.removeEventListener("scroll", this.scrollHandler, false);
-  }
+    window.removeEventListener('scroll', this.scrollHandler, false);
+  },
 };
 
 export default component;

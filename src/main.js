@@ -1,3 +1,3 @@
-import VueSeekBar from "./VueSeekBar";
+import VueSeekBar from './components/VueSeekBar';
 
 export default VueSeekBar;
