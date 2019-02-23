@@ -16,7 +16,7 @@ const props = {
     type: String,
     required: true,
   },
-};
+}
 
 const data = function() {
   return {
@@ -26,25 +26,25 @@ const data = function() {
       opacity: this.opacity,
       height: `${this.height}px`,
     },
-  };
-};
+  }
+}
 
 const methods = {
   scrollHandler() {
     // Get scrolled position
-    const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100;
+    const scrolledPer = (window.scrollY / this.calcScreenMaxHeight()) * 100
 
     if (scrolledPer <= 1) {
-      this.vueSeekBarStyle.width = '1%';
+      this.vueSeekBarStyle.width = '1%'
     } else {
-      this.vueSeekBarStyle.width = scrolledPer.toString() + '%';
+      this.vueSeekBarStyle.width = scrolledPer.toString() + '%'
     }
   },
   calcScreenMaxHeight() {
-    const docEl = document.documentElement;
-    return docEl.scrollHeight - docEl.clientHeight;
+    const docEl = document.documentElement
+    return docEl.scrollHeight - docEl.clientHeight
   },
-};
+}
 
 const component = {
   props,
@@ -52,15 +52,15 @@ const component = {
   methods,
   mounted() {
     // add event listner
-    window.addEventListener('scroll', this.scrollHandler);
+    window.addEventListener('scroll', this.scrollHandler)
   },
   destroyed() {
     // remove event listner
-    window.removeEventListener('scroll', this.scrollHandler, false);
+    window.removeEventListener('scroll', this.scrollHandler, false)
   },
-};
+}
 
-export default component;
+export default component
 </script>
 
 <style lang="scss" scoped>
